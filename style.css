@@ -36,8 +36,7 @@ body {
     font-size: 20px;
     margin-left: 10px;
     padding: 5px 15px 5px 15px;
-    -moz-appearance: none;
-    appearance: none;
+    cursor: pointer;
 }
 
 .container {
@@ -54,36 +53,15 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-
 }
 
-.seatSelected {
+.seat.selected {
     background-color: gold;
-    height: 14px;
-    width: 15px;
-    margin-right: 3px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
 }
 
-.seatSold {
+.seat.sold {
     background-color: white;
-    height: 14px;
-    width: 15px;
-    margin: 3px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
 }
-
-.seat:hover {
-    box-shadow: 0px 0px 7px gold;
-    background-color: gold;
-}
-
 
 .seat:nth-of-type(2) {
     margin-right: 18px;
@@ -95,13 +73,18 @@ body {
 
 .seat:not(.sold):hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 4px gold;
+    background-color: gold;
 }
-/*
+
 .showcase .seat:not(.sold):hover {
     cursor: default;
     transform: scale(1);
-}*/
+    background-color: none;
+    box-shadow: none;
+}
+
 .showcase {
     background: black;
     padding: 5px 10px;
@@ -136,6 +119,14 @@ body {
     box-shadow: 1px 1px 7px white;
 }
 
-.text {
+button {
+    width: 11rem;
+    height: 4rem;
+    margin-top: 2rem;
+    background-color: gold;
     font-family: "Exo";
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
