@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <label class="logo">Percinema</label>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a class="active" href="#">BOOK TICKETS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">RULES & POLICIES</a></li>
+        </ul>
+    </nav>
     <div class="movie-container">
         <label> Select a movie:</label>
         <select id="movie">
@@ -18,21 +28,21 @@
         </select>
     </div>
 
-    <ul class="showcase">
+   <ul class="showcase">
         <li>
             <div class="seat"></div>
             <small>Available</small>
         </li>
         <li>
-            <div class="seat selected">
+            <div class="seat selected"></div>
                 <small>Selected</small>
-            </div>
         </li>
         <li>
             <div class="seat sold"></div>
             <small>Sold</small>
         </li>
     </ul>
+
     <div class="container">
         <div class="screen"></div>
         <div class="row">
