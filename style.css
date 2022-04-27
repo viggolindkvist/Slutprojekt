@@ -53,13 +53,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-a.active, a:hover {
-    background: rgb(54, 54, 54);
-    transition: 0.7s;
-}
-
-.label {
-    scroll-margin: none;
+nav a.active, nav a:hover {
+    background: gold;
+    transition: background 0.7s;
+    color: black;
+    font-weight: 600;
 }
 
 .movie-container {
@@ -162,9 +160,20 @@ button {
     height: 4rem;
     margin-top: 2rem;
     background-color: gold;
-    font-family: "Exo";
-    font-size: 2rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    box-shadow: 1px 1px 4px gold;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-family: "Exo";
+    font-size: 2rem;
+}
+
+footer {
+    background-color: white;
+/*    border-radius: 50%;*/
 }
