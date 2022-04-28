@@ -16,12 +16,12 @@ container.addEventListener("click", (e) => {
     e.target.classList.toggle("selected");
   }
 
-  console.log(seats);
+//  console.log(seats);
 
   localStorage.setItem("seats", seats);
 });
 
-console.log(window.location.href);
+//console.log(window.location.href);
 
 //To do list
 //Label fonts
