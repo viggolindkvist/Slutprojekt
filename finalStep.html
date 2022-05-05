@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Percinema</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav>
@@ -19,10 +19,15 @@
       </ul>
     </nav>
 
-    <h3 id="instruction"> Enter your email that will recieve the tickets</h3>
-    <div id="contact">
-      <input type="text" id="email" placeholder="example@gmail.com">
-    </div>
+    <div>
+    <h3 id="instruction">Enter your email that will recieve the tickets</h3>
+    <form id="form" action="#">
+      <div class="inputbox">
+        <input type="text" name="" id="email" placeholder="Enter Your Email Address" onkeydown="validation()">
+        <span id="text"></span>
+      </div>
+    </form>
+  </div>
 
     <p class="numberOfSeats">You've chosen <span id="seats" style="color: gold;"></span> seats for the price of $<span id="price" style="color: gold;"></span></p>
   <footer></footer>

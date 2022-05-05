@@ -23,10 +23,4 @@ container.addEventListener("click", (e) => {
 
 //console.log(window.location.href);
 
-//To do list
-//Label fonts
-//Responsive
-//Hero on homepage
-//Email check on contact
-//footer
-//map on location
+
