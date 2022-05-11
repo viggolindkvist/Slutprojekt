@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
 /* ALL */
 * {
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -254,7 +259,15 @@ tr:nth-child(even) {
     background-color: rgb(55, 54, 54);
 }
 
+tr:last-child {
+    font-family: "Poppins";
+}
+
 /* finalStep.html */
+h3:first-child {
+    margin-top: 10vh;
+}
+
 h3 {
     position: relative;
     font-size: 20px;
@@ -262,15 +275,15 @@ h3 {
     letter-spacing: 1px;
     font-weight: 500;
     margin-bottom: 10px;
-    margin-top: 14vh;
+    margin-top: 6vh;
 }
 
 #form {
     position: relative;
 }
 
-#form #email {
-    width: 300px;
+#form .email {
+    width: 40.6vw;
     background: #292929;
     outline: none;
     border: none;
@@ -279,11 +292,18 @@ h3 {
     color: #fff;
 }
 
+
 #form #inputbox {
     position: relative;
 }
 
 .numberOfSeats {
     margin-top: 10vh;
+}
+
+/* Media Query */
+/*
+@media screen and (max-width: 600px) {
+
 }
 
