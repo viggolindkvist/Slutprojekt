@@ -282,8 +282,8 @@ h3 {
     position: relative;
 }
 
-#form .email {
-    width: 40.6vw;
+#form #email, input[type="text"]{
+    width: 40vw;
     background: #292929;
     outline: none;
     border: none;
@@ -291,7 +291,6 @@ h3 {
     border-radius: 6px;
     color: #fff;
 }
-
 
 #form #inputbox {
     position: relative;
