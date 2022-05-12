@@ -10,7 +10,7 @@ function validation() {
   var form = document.getElementById("form");
   var email = document.getElementById("email").value;
   var text = document.getElementById("text");
-  var pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
   if (email.match(pattern)) {
     form.classList.add("valid");
