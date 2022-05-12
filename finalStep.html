@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Percinema</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
     <nav>
       <label class="logo">Percinema</label>
       <ul>
@@ -18,29 +16,49 @@
         <li><a href="#">RULES & POLICIES</a></li>
       </ul>
     </nav>
-
-    <div>
-    <h3 class="instruction">Enter your email that will recieve the tickets</h3>
-    <form id="form" action="#">
-      <div class="inputbox">
-        <input type="text" id="email" placeholder="Enter Your Email Address" onkeydown="validation()">
-        <span id="text"></span>
-      </div>
-    <h3 class="instruction">Matter</h3>
-      <div class="inputbox">
-        <input type="text" placeholder="Matter (Cinema Tickets obviously)">
-      </div>
-    <h3 class="instruction">Any thing you want us to know</h3>
-      <div class="inputbox">
-        <input type="text" placeholder="Write a message">
-      </div>
-    </form>
-  </div>
-
-    <p class="numberOfSeats">You've chosen <span id="seats" style="color: gold;"></span> seats for the price of $<span id="price" style="color: gold;"></span></p>
+  </head>
+  <body>
+    <section>
+      <h3 class="instruction">
+        Enter your email that will recieve the tickets
+      </h3>
+      <form id="form" action="#">
+        <div class="inputbox">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email Address"
+            onkeydown="validation()"
+          />
+          <span id="text"></span>
+        </div>
+        <h3 class="instruction">Matter</h3>
+        <div class="inputbox">
+          <input type="text" placeholder="Matter (Cinema Tickets obviously)" />
+        </div>
+        <h3 class="instruction">Any thing you want us to know</h3>
+        <div class="inputbox">
+          <input type="text" placeholder="Write a message" />
+        </div>
+      </form>
+    </section>
+    <iframe
+      width="425"
+      height="350"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=18.053455352783207%2C59.436663746151595%2C18.073539733886722%2C59.443929707074815&amp;layer=mapnik"
+      style="border: 1px solid black">
+    </iframe>
+    <small><a href="https://www.openstreetmap.org/#map=16/59.4403/18.0635">Show larger map</a></small>
+    <p class="numberOfSeats">
+      You've chosen <span id="seats" style="color: gold"></span> seats for the
+      price of $<span id="price" style="color: gold"></span>
+    </p>
     <button class="furtherbtn"><a>Confirm</a></button>
-
-  <footer></footer>
-  <script src="finalSeats.js"></script>
+    <footer></footer>
+    <script src="finalSeats.js"></script>
   </body>
 </html>
