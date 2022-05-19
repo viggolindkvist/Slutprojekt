@@ -63,9 +63,24 @@ nav a.active, nav a:hover {
 }
 
 footer {
-    background-color: white;
-/*    border-radius: 50%;*/
+    padding: 40px;
+  }
+
+  footer .social a {
+    font-size: 40px;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+
+.fab {
+    color: white;
 }
+
+#copyright {
+    opacity: 0.3;
+    margin-top: 3vh;
+}
+
 /* BOOK TICKETS */
 .movie-container {
     margin: 1.25rem 0;
@@ -163,7 +178,7 @@ option {
 .furtherbtn {
     width: 11rem;
     height: 4rem;
-    margin-top: 2rem;
+    margin: 2rem;
     background-color: gold;
     border-radius: 0.3225rem;
     border: none;
@@ -290,9 +305,14 @@ h3 {
     position: relative;
 }
 
-.numberOfSeats {
+#map {
     margin-top: 10vh;
 }
+
+.numberOfSeats {
+    margin-top: 7vh;
+}
+
 
 /* Media Query */
 /*
@@ -302,12 +322,12 @@ h3 {
 
 /*
 Att göra:
-footer
+footer // Copyright fix
 responsiv
 hamburgar meny + animation
 letter spacing //
 h1 h2 // 
 nav i header //
 section //
-main
-bild storlek // size minska när ändra från px till rem?
+main //
+bild storlek 

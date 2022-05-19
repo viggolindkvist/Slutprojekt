@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8993cf3c4d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Percinema</title>
     <link rel="stylesheet" href="css/style.css" />
     <nav>
@@ -18,7 +22,7 @@
     </nav>
   </head>
   <body>
-    <section>
+    <main>
       <h3 class="instruction">
         Enter your email that will recieve the tickets
       </h3>
@@ -41,24 +45,47 @@
           <input type="text" placeholder="Write a message" />
         </div>
       </form>
-    </section>
-    <iframe
+    </main>
+    <iframe id="map"
       width="425"
       height="350"
       frameborder="0"
       scrolling="no"
       marginheight="0"
       marginwidth="0"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=18.05659890174866%2C59.43845861582101%2C18.070396184921268%2C59.44209159861659&amp;layer=mapnik&amp;marker=59.44027515598635%2C18.06349754333496"
+      style="border: 1px solid black"
+    ></iframe
+    ><br /><small
+      ><a
+        href="https://www.openstreetmap.org/?mlat=59.44028&amp;mlon=18.06350#map=17/59.44028/18.06350"
+        >Show larger <map name=""></map></a
+      ></small
+    >
+    <!--    <iframe class="map"
+      width="425"
+      height="350"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0" 
       src="https://www.openstreetmap.org/export/embed.html?bbox=18.053455352783207%2C59.436663746151595%2C18.073539733886722%2C59.443929707074815&amp;layer=mapnik"
       style="border: 1px solid black">
     </iframe>
-    <small><a href="https://www.openstreetmap.org/#map=16/59.4403/18.0635">Show larger map</a></small>
+    <small><a href="https://www.openstreetmap.org/#map=16/59.4403/18.0635">Show larger map</a></small> -->
     <p class="numberOfSeats">
       You've chosen <span id="seats" style="color: gold"></span> seats for the
       price of $<span id="price" style="color: gold"></span>
     </p>
     <button class="furtherbtn"><a>Confirm</a></button>
-    <footer></footer>
+    <footer>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p id="copyright">©Percinema</p>
+    </footer>
     <script src="finalSeats.js"></script>
   </body>
 </html>
