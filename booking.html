@@ -7,16 +7,24 @@
     <script src="https://kit.fontawesome.com/8993cf3c4d.js" crossorigin="anonymous"></script>
     <title>Percinema</title>
     <link rel="stylesheet" href="css/style.css">
-    <nav>
-        <label class="logo">Percinema</label>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">Percinema</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a class="active" href="booking.html">BOOK SEATS</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="#">SERVICES</a></li>
             <li><a href="#">RULES & POLICIES</a></li>
-        </ul>
-    </nav>
+          </ul>
+        </div>
+      </nav>
+      <div class="animation"></div>
 </head>
 <body>
     <section class="movie-container">
@@ -125,16 +133,16 @@
         </div>
     </main>
     <button class="furtherbtn"><a href="finalStep.html">Further</a></button>
-    <script src="script.js"></script>
     <footer>
         <div class="social">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <p id="copyright">©Percinema</p>     
-
           </div>
+          <p id="copyright">©Percinema</p>     
     </footer>
+    <script src="script.js"></script>
+    <script src="hamburgermenu.js"></script>
 </body>
 </html>
 

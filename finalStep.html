@@ -10,16 +10,24 @@
     ></script>
     <title>Percinema</title>
     <link rel="stylesheet" href="css/style.css" />
-    <nav>
-      <label class="logo">Percinema</label>
-      <ul>
-        <li><a href="home.html">HOME</a></li>
-        <li><a class="active" href="booking.html">BOOK SEATS</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">RULES & POLICIES</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="logo">Percinema</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a class="active" href="booking.html">BOOK SEATS</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">RULES & POLICIES</a></li>
+        </ul>
+      </div>
     </nav>
+    <div class="animation"></div>
   </head>
   <body>
     <main>
@@ -59,20 +67,8 @@
     ><br /><small
       ><a
         href="https://www.openstreetmap.org/?mlat=59.44028&amp;mlon=18.06350#map=17/59.44028/18.06350"
-        >Show larger <map name=""></map></a
-      ></small
-    >
-    <!--    <iframe class="map"
-      width="425"
-      height="350"
-      frameborder="0"
-      scrolling="no"
-      marginheight="0"
-      marginwidth="0" 
-      src="https://www.openstreetmap.org/export/embed.html?bbox=18.053455352783207%2C59.436663746151595%2C18.073539733886722%2C59.443929707074815&amp;layer=mapnik"
-      style="border: 1px solid black">
-    </iframe>
-    <small><a href="https://www.openstreetmap.org/#map=16/59.4403/18.0635">Show larger map</a></small> -->
+        >Show larger map</a
+      ></small>
     <p class="numberOfSeats">
       You've chosen <span id="seats" style="color: gold"></span> seats for the
       price of $<span id="price" style="color: gold"></span>
@@ -86,6 +82,7 @@
       </div>
       <p id="copyright">©Percinema</p>
     </footer>
+    <script src="hamburgermenu.js"></script>
     <script src="finalSeats.js"></script>
   </body>
 </html>

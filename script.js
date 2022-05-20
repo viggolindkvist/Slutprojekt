@@ -22,5 +22,3 @@ container.addEventListener("click", (e) => {
 });
 
 //console.log(window.location.href);
-
-

@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Percinema</title>
     <link rel="stylesheet" href="css/style.css" />
-    <nav>
-      <label class="logo">Percinema</label>
-      <ul>
-        <li><a class="active" href="home.html">HOME</a></li>
-        <li><a href="booking.html">BOOK SEATS</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">RULES & POLICIES</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="logo">Percinema</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a class="active" href="home.html">HOME</a></li>
+          <li><a href="booking.html">BOOK SEATS</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">RULES & POLICIES</a></li>
+        </ul>
+      </div>
     </nav>
+    <div class="animation"></div>
   </head>
   <body>
     <main class="hero-image">
@@ -25,26 +33,30 @@
       </div>
     </main>
     <section class="gallery">
-    <div class="movie-cover">
-      <img src="images/batman.jpg" alt="Batman Cover"/>
-    </div>
-    <div class="movie-cover">
-      <img src="images/parasite.jpg" alt="Parasite Cover"/>
-    </div>
-    <div class="movie-cover">
-      <img src="images/12angrymen.jpg" alt="12 Angry Men Cover (Great film)"/>
-    </div>
-    <div class="movie-cover">
-      <img src="images/memoriesofmurder.jpg" alt="Batman Cover"/>
-    </div>
-  </section>
-  <footer>
-    <div class="social">
+      <div class="movie-cover">
+        <img src="images/batman.jpg" alt="Batman Cover" />
+      </div>
+      <div class="movie-cover">
+        <img src="images/parasite.jpg" alt="Parasite Cover" />
+      </div>
+      <div class="movie-cover">
+        <img
+          src="images/12angrymen.jpg"
+          alt="12 Angry Men Cover (Great film)"
+        />
+      </div>
+      <div class="movie-cover">
+        <img src="images/memoriesofmurder.jpg" alt="Batman Cover" />
+      </div>
+    </section>
+    <footer>
+      <div class="social">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
-      <p id="copyright">©Percinema</p>     
-</footer>
+      <p id="copyright">©Percinema</p>
+    </footer>
+    <script src="hamburgermenu.js"></script>
   </body>
 </html>
